@@ -23,7 +23,7 @@
         //cerrar BD
         public function closeDB(){
             //tarea
-            $this-> close();
+            $this->close();
         }
 
     }
