@@ -1,7 +1,7 @@
 <?php
     include ("database.class.php)");
 
-    class Student {
+    class Student{
         private $idStudent=null;
         private $dni=null;
         private $surname=null;
@@ -69,8 +69,19 @@
         }
 
         public function getAllStudents(){
+            $sql="SELECT * FROM students";
+            $this->conexion=new Database();
+            $result= $this->conexion->query($sql);
+            $allStudents=null;
+            if($result){
+                while($row=$result->fetch_assoc()){
+                    $allStudents[]=$row;
+                }
+            }
 
+            return $allStudents;
         }
+
         //geeter y setter
         //hacer get y set para todos atributos
 
