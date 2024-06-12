@@ -14,18 +14,7 @@
         private $school=null;
         private $conexion=null;
 
-        public function __construct($dni, $surname, $name, $birthday, $phone, $adress, $email, $password, $school){
-            $this->dni=$dni;
-            $this->surname=$surname;
-            $this->name=$name;
-            $this->birthdate=$birthdate;
-            $this->phone=$phone;
-            $this->adress=$adress;
-            $this->email=$email;
-            $this->password=$password;
-            $this->school=$school;
-        }
-
+       
         public function addStudent(){
             //crear la consulta
             $sql="INSERT INTO students (dni, surname, name, birthdate, phone, adress, email, password, school) VALUES (".$this->dni.", '".$this->surname."', '".$this->name."', '".$this->birthdate."', ".$this->phone.", '".$this->adress."', '".$this->email."', '".$this->password."', '".$this->school."')"; 
