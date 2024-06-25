@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Student</title>
+    <link rel="stylesheet" href="css/alertify.css" />
+    <link rel="stylesheet" href="css/themes/default.css" />
 </head>
 
 
@@ -39,7 +41,7 @@
                             print"<td>".$data["phone"]."</td>";
                             print"<td><button type='button' name='Editar' value='Editar' onclick=\"location.href='formEditStudent.php?idStudent=".$data["idStudent"]."';\"
                              />";
-                            print"<td><button type='button' name='Eliminar' value='Eliminar' onclick='' /> </td>";
+                        print"<td><button type='button' name='Eliminar' value='Eliminar' onclick= /> </td>";
                             print "</tr>";
 
                     }
@@ -52,4 +54,6 @@
     </table>
 
 </body>
+<script src="<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>"></script>
+<script src="js/alertify.js"></script>
 </html>
